@@ -1,0 +1,43 @@
+Vue-cli 塔建开发环境
+npm install vie-cli -g
+
+初始化项目，采用webpack模板
+vue init webpack pos
+
+进入项目，安装ackage.json里项目的依赖包
+npm install
+
+在Iconfint官网选择好喜欢的图标进行引入到项目中
+在index.html 中引入<link rel="stylesheet" href=".......">
+图标的使用：图标引入之后，在‘我的项目中查找图标的font class值’，进行复制代码粘贴
+<i class="icon iconfont icon-hanbao"></i>
+
+在src/components目录下，创建common和page文件夹
+common文件夹用来放公用组件，leftNav.vue组件就放在这里
+page文件夹用来放我们的页面模板的组件
+
+建立leftNav.vue文件夹编写独立的左侧导航组件
+然后把leftNav组件放到模板中，在App.vue中引入leftNav组件
+import leftNav from '@/components/common/leftNav'
+components:{ leftNav }
+
+Element 是基于Vue2.0的组件库，
+npm安装  npm n install element-ui --save
+引入整个Element
+    import ElementUI from 'element-ui';
+    import 'element-ui/lib/theme-chalk/index.css';
+
+    Vue.use(ElementUI);
+
+
+Axios 从远程读取数据
+安装Axios  npm install axios --save
+引入Axios  在Pos.vue页面引入Axios  
+import axios from 'axios'
+
+
+项目打包和上线
+打包注意事项：
+1、把绝对路径改为相对路径
+打开config/index.js 会看到一个build属性，这里就我们打包的基本配置了，你在这里可以修改打包的目录，打包的文件名。最重要的是一定要把绝对目录改为相对目录。
+    assetsPublicPath:'./'
