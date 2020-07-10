@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<!-- 
+Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.4
+Version: 4.0
+Author: KeenThemes
+Website: http://www.keenthemes.com/
+Contact: support@keenthemes.com
+Follow: www.twitter.com/keenthemes
+Like: www.facebook.com/keenthemes
+Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes
+License: You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.
+-->
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+<meta charset="utf-8"/>
+<title>即可网盘 - 干净、安全、可信任的网盘</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<meta content="" name="description"/>
+<meta content="" name="author"/>
+<!-- BEGIN GLOBAL MANDATORY STYLES -->
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css">
+<link href="../../assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="../../assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css">
+<link href="../../assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="../../assets/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css">
+<link href="../../assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css"/>
+<!-- END GLOBAL MANDATORY STYLES -->
+<!-- BEGIN THEME STYLES -->
+<link href="../../assets/global/css/components-rounded.css" id="style_components" rel="stylesheet" type="text/css"/>
+<link href="../../assets/global/css/plugins.css" rel="stylesheet" type="text/css"/>
+<link href="../../assets/admin/layout2/css/layout.css" rel="stylesheet" type="text/css"/>
+<link id="style_color" href="../../assets/admin/layout2/css/themes/grey.css" rel="stylesheet" type="text/css"/>
+<link href="../../assets/admin/layout2/css/custom.css" rel="stylesheet" type="text/css"/>
+<!-- END THEME STYLES -->
+<link rel="shortcut icon" href="favicon.ico"/>
+</head>
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+<!-- DOC: Apply "page-header-fixed-mobile" and "page-footer-fixed-mobile" class to body element to force fixed header or footer in mobile devices -->
+<!-- DOC: Apply "page-sidebar-closed" class to the body and "page-sidebar-menu-closed" class to the sidebar menu element to hide the sidebar by default -->
+<!-- DOC: Apply "page-sidebar-hide" class to the body to make the sidebar completely hidden on toggle -->
+<!-- DOC: Apply "page-sidebar-closed-hide-logo" class to the body element to make the logo hidden on sidebar toggle -->
+<!-- DOC: Apply "page-sidebar-hide" class to body element to completely hide the sidebar on sidebar toggle -->
+<!-- DOC: Apply "page-sidebar-fixed" class to have fixed sidebar -->
+<!-- DOC: Apply "page-footer-fixed" class to the body element to have fixed footer -->
+<!-- DOC: Apply "page-sidebar-reversed" class to put the sidebar on the right side -->
+<!-- DOC: Apply "page-full-width" class to the body element to have full width page without the sidebar menu -->
+<body class="page-header-fixed page-container-bg-solid page-sidebar-closed-hide-logo page-header-fixed-mobile page-footer-fixed1">
+<!-- BEGIN HEADER -->
+<div class="page-header navbar navbar-fixed-top">
+	<!-- BEGIN HEADER INNER -->
+	<div class="page-header-inner">
+		<!-- 开始 LOGO -->
+		<div class="page-logo">
+			<a href="index.html">
+			<img src="../img/logo.png" alt="logo" class="logo-default"/>
+			</a>
+			<!-- 向左隐藏按钮 -->
+			<div class="menu-toggler sidebar-toggler"></div>
+		</div>
+		<a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+		</a>
+		<!-- 页面 开始 -->
+		<!-- 页面 开始 -->
+		<div class="page-top">
+			<!-- 搜索框 -->
+			<form class="search-form search-form-expanded" action="extra_search.html" method="GET">
+				<div class="input-group">
+					<input type="text" class="form-control" placeholder="搜索..." name="query">
+					<span class="input-group-btn">
+					<a href="javascript:;" class="btn submit"><i class="icon-magnifier"></i></a>
+					</span>
+				</div>
+			</form>
+			<!-- 结束  搜索框 -->
+			<!-- 开始 顶部导航栏 -->
+			<div class="top-menu">
+				<ul class="nav navbar-nav pull-right">
+					<li class="dropdown dropdown-extended dropdown-notification" id="header_notification_bar">
+						<a href="members.html" class="dropdown-toggle">
+							开通会员
+						</a>
+					</li>
+					<!-- 开始 用户登录下拉框 -->
+					<li class="dropdown dropdown-user">
+						<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+						<img alt="" class="img-circle" src="../../assets/admin/layout2/img/avatar3_small.jpg"/>
+						<span class="username username-hide-on-mobile">
+						Nick </span>
+						<i class="fa fa-angle-down"></i>
+						</a>
+						<ul class="dropdown-menu dropdown-menu-default">
+							<li>
+								<a href="members.html">
+								<i class="icon-user"></i>开通会员 </a>
+							</li>
+							<li>
+								<a href="#">
+								<i class="icon-envelope-open"></i> 资源发布记录 <span class="badge badge-danger">
+								3 </span>
+								</a>
+							</li>
+							<li>
+								<a href="index.html">
+								<i class="icon-rocket"></i>我的资料
+								</a>
+							</li>
+							<li class="divider">
+							</li>
+							<li>
+								<a href="#">
+								<i class="icon-lock"></i> 帮助中心 </a>
+							</li>
+							<li>
+								<a href="login.html">
+								<i class="icon-key"></i> 注销 </a>
+							</li>
+						</ul>
+					</li>
+					<!-- 结束 用户信息下拉框 -->
+					<!-- 右侧边弹出框 -->
+					<li class="dropdown dropdown-extended quick-sidebar-toggler">
+		                <span class="sr-only">Toggle Quick Sidebar</span>
+		                <i class="icon-logout"></i>
+		            </li>
+					<!-- 结束 右侧边弹出框 -->
+				</ul>
+			</div>
+			<!-- 结束 顶部导航菜单 -->
+		</div>
+	</div>
+	<!-- END HEADER INNER -->
+</div>
+<!-- END HEADER -->
+<div class="clearfix">
+</div>
+<!-- BEGIN CONTAINER -->
+<div class="page-container">
+	<!-- BEGIN SIDEBAR -->
+	<div class="page-sidebar-wrapper">
+		<!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+		<!-- DOC: Change data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+		<div class="page-sidebar navbar-collapse collapse">
+			<!-- BEGIN SIDEBAR MENU -->
+			<ul class="page-sidebar-menu page-sidebar-menu-hover-submenu " data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200">
+				<li>
+					<a href="index.html">
+					<i class="icon-home"></i>
+					<span class="title">主页</span>
+					</a>
+				</li>
+				<li class="active open">
+					<a href="management.html">
+					<i class="icon-briefcase"></i>
+					<span class="title">文件管理</span>
+					<span class="selected"></span>
+					<span class="arrow open"></span>
+					</a>
+				</li>
+				<li>
+					<a href="account.html">
+					<i class="icon-settings"></i>
+					<span class="title">账户管理</span>
+					<span class="arrow "></span>
+					</a>
+				</li>
+				<li>
+					<a href="withdrawal_1.html">
+					<i class="icon-settings"></i>
+					<span class="title">收益管理</span>
+					<span class="selected"></span>
+					</a>
+					<ul class="sub-menu">
+						<li>
+							<a href="withdrawal_1.html">
+							<i class="icon-home"></i>
+							申请提现</a>
+						</li>
+						<li>
+							<a href="earnings.html">
+							<i class="icon-basket"></i>
+							收益统计</a>
+						</li>
+						<li>
+							<a href="earnings_2.html">
+							<i class="icon-basket"></i>
+							收益记录</a>
+						</li>
+						<li>
+							<a href="withdrawal_2.html">
+							<i class="icon-tag"></i>
+							提现记录</a>
+						</li>
+						<li>
+							<a href="withdrawal_3.html">
+							<i class="icon-handbag"></i>
+							提现设置</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="members.html">
+					<i class="icon-diamond"></i>
+					<span class="title">会员购买</span>
+					<span class="arrow "></span>
+					</a>
+				</li>
+			</ul>
+			<!-- END SIDEBAR MENU -->
+		</div>
+	</div>
+	<!-- END SIDEBAR -->
+	<!-- BEGIN CONTENT -->
+	<div class="page-content-wrapper">
+		<div class="page-content">
+			<!-- BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+			<div class="modal fade" id="portlet-config" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+							<h4 class="modal-title">Modal title</h4>
+						</div>
+						<div class="modal-body">
+							 Widget settings form goes here
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn blue">Save changes</button>
+							<button type="button" class="btn default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+					<!-- /.modal-content -->
+				</div>
+				<!-- /.modal-dialog -->
+			</div>
+			<!-- /.modal -->
+			<h3 class="page-title">
+			文件管理 <small>my file</small>
+			</h3>
+			<div class="page-bar">
+				<ul class="page-breadcrumb">
+					<li>
+						<i class="fa fa-home"></i>
+						<a href="index.html">主页</a>
+						<i class="fa fa-angle-right"></i>
+					</li>
+					<li>
+						<a href="#">文件管理</a>
+					</li>
+				</ul>
+			</div>
+			<!-- END PAGE HEADER-->
+			<!-- BEGIN PAGE CONTENT-->
+			<div class="row">
+				<div class="col-md-12">
+					<!-- BEGIN EXAMPLE TABLE PORTLET-->
+					<div class="portlet box grey-cascade">
+						<div class="portlet-title">
+							<div class="caption">
+								<i class="fa fa-globe"></i>网盘管理
+							</div>
+							<div class="tools">
+								<a href="" class="collapse">
+									
+								</a>
+								<a href="" class="reload">
+								</a>
+							</div>
+						</div>
+						<div class="portlet-body">
+							<div class="table-toolbar">
+								<div class="row">
+									
+									<div class="col-md-12">
+										<input type="file" id="btn_file" style="display:none">
+										<button type="submit" class="btn blue start" onclick="F_Open_dialog()">
+										<i class="fa fa-upload"></i>
+										<span>
+										上传文件 </span>
+										</button>
+										<div class="btn-group">
+											<button id="sample_editable_1_new" class="btn green">
+											<i class="fa fa-plus"></i>创建新目录
+											</button>
+										</div>
+										
+										<div class="btn-group">
+											<button type="button" class="btn btn-default">无加密上传</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<table class="table table-striped table-hover" id="sample_1">
+								<thead>
+									<tr>
+										<th class="table-checkbox">
+											<input type="checkbox" class="group-checkable" data-set="#sample_1 .checkboxes"/>
+										</th>
+										<th>
+											 文件(夹)名
+										</th>
+										<th>
+											 浏览数/下载数
+										</th>
+										<th>
+											 文件(夹)大小
+										</th>
+										<th>
+											 创建时间
+										</th>
+										<th>
+											 操作|排序
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="odd gradeX">
+										<td>
+											<input type="checkbox" class="checkboxes" value="1"/>
+										</td>
+										<td>
+											 123
+										</td>
+										<td>
+											-
+										</td>
+										<td>
+											 0.00 B
+										</td>
+										<td class="center">
+											 2020-03-10 &nbsp;&nbsp;17:52:15
+										</td>
+										<td>
+											<a href="javascript:;" class="btn btn-xs blue">
+											<i class="fa fa-file-o"></i> 复制 </a>
+											<a href="javascript:;" class="btn btn-xs red">
+											修改 <i class="fa fa-edit"></i>
+											</a>
+										</td>
+									</tr>
+									<tr class="odd gradeX">
+										<td>
+											<input type="checkbox" class="checkboxes" value="1"/>
+										</td>
+										<td>
+											 123
+										</td>
+										<td>
+											-
+										</td>
+										<td>
+											 0.00 B
+										</td>
+										<td class="center">
+											 2020-03-10 &nbsp;&nbsp;17:52:15
+										</td>
+										<td>
+											<a href="javascript:;" class="btn btn-xs blue">
+											<i class="fa fa-file-o"></i> 复制 </a>
+											<a href="javascript:;" class="btn btn-xs red">
+											修改 <i class="fa fa-edit"></i>
+											</a>
+										</td>
+									</tr>
+									<tr class="odd gradeX">
+										<td>
+											<input type="checkbox" class="checkboxes" value="1"/>
+										</td>
+										<td>
+											fasf
+										</td>
+										<td>
+											-
+										</td>
+										<td>
+											2 MB
+										</td>
+										<td class="center">
+											 2020-03-9 &nbsp;&nbsp;17:52:15
+										</td>
+										<td>
+											<a href="javascript:;" class="btn btn-xs blue">
+											<i class="fa fa-file-o"></i> 复制 </a>
+											<a href="javascript:;" class="btn btn-xs red">
+											修改 <i class="fa fa-edit"></i>
+											</a>
+										</td>
+									</tr>
+									<tr class="odd gradeX">
+										<td>
+											<input type="checkbox" class="checkboxes" value="1"/>
+										</td>
+										<td>
+											 123
+										</td>
+										<td>
+											-
+										</td>
+										<td>
+											 0.00 B
+										</td>
+										<td class="center">
+											 2020-03-10 &nbsp;&nbsp;17:52:15
+										</td>
+										<td>
+											<a href="javascript:;" class="btn btn-xs blue">
+											<i class="fa fa-file-o"></i> 复制 </a>
+											<a href="javascript:;" class="btn btn-xs red">
+											修改 <i class="fa fa-edit"></i>
+											</a>
+										</td>
+									</tr>
+									<tr class="odd gradeX">
+										<td>
+											<input type="checkbox" class="checkboxes" value="1"/>
+										</td>
+										<td>
+											fasf
+										</td>
+										<td>
+											-
+										</td>
+										<td>
+											2 MB
+										</td>
+										<td class="center">
+											 2020-03-9 &nbsp;&nbsp;17:52:15
+										</td>
+										<td>
+											<a href="javascript:;" class="btn btn-xs blue">
+											<i class="fa fa-file-o"></i> 复制 </a>
+											<a href="javascript:;" class="btn btn-xs red">
+											修改 <i class="fa fa-edit"></i>
+											</a>
+										</td>
+									</tr>
+									<tr class="odd gradeX">
+										<td>
+											<input type="checkbox" class="checkboxes" value="1"/>
+										</td>
+										<td>
+											 123
+										</td>
+										<td>
+											-
+										</td>
+										<td>
+											 0.00 B
+										</td>
+										<td class="center">
+											 2020-03-10 &nbsp;&nbsp;17:52:15
+										</td>
+										<td>
+											<a href="javascript:;" class="btn btn-xs blue">
+											<i class="fa fa-file-o"></i> 复制 </a>
+											<a href="javascript:;" class="btn btn-xs red">
+											修改 <i class="fa fa-edit"></i>
+											</a>
+										</td>
+									</tr>
+									<tr class="odd gradeX">
+										<td>
+											<input type="checkbox" class="checkboxes" value="1"/>
+										</td>
+										<td>
+											 21421
+										</td>
+										<td>
+											-
+										</td>
+										<td>
+											2 MB
+										</td>
+										<td class="center">
+											 2020-03-9 &nbsp;&nbsp;17:52:15
+										</td>
+										<td>
+											<a href="javascript:;" class="btn btn-xs blue">
+											<i class="fa fa-file-o"></i> 复制 </a>
+											<a href="javascript:;" class="btn btn-xs red">
+											修改 <i class="fa fa-edit"></i>
+											</a>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<!-- <table class="table table-striped" id="box">
+								<thead>
+									<tr>
+										<th class="table-checkbox">
+											<input type="checkbox" class="group-checkable" data-set=""/>
+										</th>
+										<th>
+											 文件(夹)名
+										</th>
+										<th>
+											 浏览数/下载数
+										</th>
+										<th>
+											 文件(夹)大小
+										</th>
+										<th>
+											 创建时间
+										</th>
+										<th>
+											 操作|排序
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="odd gradeX">
+										<td>
+											<input type="checkbox" class="checkboxes" value="1"/>
+										</td>
+										<td>
+											 123
+										</td>
+										<td>
+											-
+										</td>
+										<td>
+											 0.00 B
+										</td>
+										<td class="center">
+											 2020-03-10 &nbsp;&nbsp;17:52:15
+										</td>
+										<td>
+											操作
+										</td>
+									</tr>
+									<tr class="odd gradeX">
+										<td>
+											<input type="checkbox" class="checkboxes" value="1"/>
+										</td>
+										<td>
+											 123
+										</td>
+										<td>
+											-
+										</td>
+										<td>
+											 0.00 B
+										</td>
+										<td class="center">
+											 2020-03-10 &nbsp;&nbsp;17:52:15
+										</td>
+										<td>
+											操作
+										</td>
+									</tr>
+									<tr class="odd gradeX">
+										<td>
+											<input type="checkbox" class="checkboxes" value="1"/>
+										</td>
+										<td>
+											 21421
+										</td>
+										<td>
+											-
+										</td>
+										<td>
+											2 MB
+										</td>
+										<td class="center">
+											 2020-03-9 &nbsp;&nbsp;17:52:15
+										</td>
+										<td>
+											操作
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							 -->
+							<div class="row">
+								<div class="container-fluid">
+									<button type="button" class="btn btn-primary" id="checkAll">全选</button>
+									<button type="button" class="btn btn-primary" id="reverseCheck">反选</button>
+									<button type="button" class="btn btn-danger" id="unCheckAll">取消</button>
+								</div>
+							</div>
+							<!-- js -->
+							<script>
+							  /*一：需求分析：
+							      (1)点击全选：选中所有选择框（设置checked属性为true）
+							      (2)点击全不选：不选中所有选择框（设置checked属性为false）
+							      (3)点击反选：让每一个选择框的checked属性与自身相反
+							    二：思路分析
+							        1.获取元素
+							        2.注册事件
+							        3.事件处理
+							  */
+							  //1.获取页面元素
+							  var checkAll = document.getElementById('checkAll');//全选
+							  var reverseCheck = document.getElementById('reverseCheck');//反选
+							  var unCheckAll = document.getElementById('unCheckAll');//取消
+							  var checkList = document.getElementsByClassName('checkboxes');//选择框列表
+							//2.注册事件
+							//2.1 全选
+							checkAll.onclick = function(){
+							    //3.事件处理：选中所有选择框（设置checked属性为true）
+							    for(var i = 0;i<checkList.length;i++){
+							      checkList[i].checked = true;
+							    }
+							}
+							//2.2 全不选
+							unCheckAll.onclick = function(){
+								//3.事件处理:不选中所有选择框（设置checked属性为false）
+								for(var i = 0;i<checkList.length;i++){
+								  checkList[i].checked = false;
+								}
+							}
+							//2.3 反选
+							reverseCheck.onclick = function(){
+							  //3.事件处理:让每一个选择框的checked属性与自身相反
+							  for(var i = 0;i<checkList.length;i++){
+								checkList[i].checked = !checkList[i].checked;//逻辑非取反
+								// if (checkList[i].checked == true){
+								//   checkList[i].checked = false;
+								// }else{//false
+								//   checkList[i].checked = true;
+								// }
+							  }
+							}
+							</script>
+							<div class="row">
+								<div class="container-fluid">
+									<div class="form-group" style="margin-top: 20px;">
+										<div class="col-md-2">
+											<select class="bs-select form-control">
+												<option>-根目录-</option>
+												<option>1</option>
+												<option>2</option>
+												<option>3</option>
+											</select>
+										</div>
+										<div class="col-md-5">
+											<label>
+												文件操作:<input type="radio" name="positions" value="toast-top-right" checked/>
+											</label>
+											<label>
+												删除:<input type="radio" name="positions" value="toast-bottom-right"/>
+											</label>
+											<label>
+												批量复制地址:<input type="radio" name="positions" value="toast-bottom-left"/>
+											</label>
+											<label>
+												排序:<input type="radio" name="positions" value="toast-top-left"/>
+											</label>
+											<label>
+												批量移动:<input type="radio" name="positions" value="toast-top-center"/>
+											</label>
+											<button type="button" class="btn btn-default" id="unCheckAll">提交</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- END EXAMPLE TABLE PORTLET-->
+				</div>
+			</div>
+			<!-- END PAGE CONTENT-->
+		</div>
+	</div>
+	<!-- END CONTENT -->
+	<!-- BEGIN QUICK SIDEBAR -->
+	<!--Cooming Soon...-->
+	<!-- END QUICK SIDEBAR -->
+</div>
+<!-- END CONTAINER -->
+<div class="page-footer">
+		<div class="page-footer-inner">
+			 Powered by <a href="http://www.jkpan.com/" target="_blank">Jkpan tema</a> 2008-15 &copy; All Rights Reserved. <a href="http://www.miibeian.gov.cn/" target="_blank">粤ICP备16002742号</a>
+		</div>
+		<div class="scroll-to-top">
+			<i class="icon-arrow-up"></i>
+		</div>
+	</div>
+	<!-- 结束 页底 -->
+</div>
+<!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+<!-- BEGIN CORE PLUGINS -->
+<!--[if lt IE 9]>
+<script src="../../assets/global/plugins/respond.min.js"></script>
+<script src="../../assets/global/plugins/excanvas.min.js"></script> 
+<![endif]-->
+<script src="../../assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/jquery-migrate.min.js" type="text/javascript"></script>
+<!-- IMPORTANT! Load jquery-ui.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+<script src="../../assets/global/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/jquery.cokie.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
+<!-- END CORE PLUGINS -->
+<!-- BEGIN PAGE LEVEL PLUGINS -->
+<script type="text/javascript" src="../../assets/global/plugins/select2/select2.min.js"></script>
+<script type="text/javascript" src="../../assets/global/plugins/datatables/media/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="../../assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.js"></script>
+<!-- END PAGE LEVEL PLUGINS -->
+<!-- BEGIN PAGE LEVEL SCRIPTS -->
+<script src="../../assets/global/scripts/metronic.js" type="text/javascript"></script>
+<script src="../../assets/admin/layout2/scripts/layout.js" type="text/javascript"></script>
+<script src="../../assets/admin/layout2/scripts/demo.js" type="text/javascript"></script>
+<script src="../../assets/admin/pages/scripts/table-managed.js"></script>
+<script>
+jQuery(document).ready(function() {       
+   Metronic.init(); // init metronic core components
+Layout.init(); // init current layout
+Demo.init(); // init demo features
+   TableManaged.init();
+});
+</script>
+<script type="text/javascript">
+function F_Open_dialog() 
+{ 
+document.getElementById("btn_file").click(); 
+}
+</script>
+</body>
+<!-- END BODY -->
+</html>
