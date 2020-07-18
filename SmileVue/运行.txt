@@ -1,0 +1,5 @@
+npm install 
+
+npm run dev
+
+http://localhost:8080/#/main           首页是这个路径
